@@ -1,0 +1,14 @@
+.header__marquee {
+  background-color: #1a1a1a;
+}
+
+.header__marquee-item-wrapper {
+  margin: 15px 50px;
+}
+
+.header__marquee-item-wrapper span {
+  color: #f5f3f3;
+  font-size: 24px;
+}
+
+/* @media(max-width: ) */

@@ -1,0 +1,12 @@
+.currency-converter {
+  margin: 50px 0;
+}
+
+.currency-converter__content-wrapper {
+  max-width: 325px;
+  margin: auto
+}
+
+.currency-converter__counter {
+  border: 1px solid #ccc
+}

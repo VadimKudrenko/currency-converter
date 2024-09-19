@@ -1,5 +1,6 @@
-.header__marquee {
+.header-component {
   background-color: #1a1a1a;
+  text-align: center;
 }
 
 .header__marquee-item-wrapper {
@@ -10,5 +11,3 @@
   color: #f5f3f3;
   font-size: 24px;
 }
-
-/* @media(max-width: ) */

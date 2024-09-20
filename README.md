@@ -1,3 +1,18 @@
+# Warning!
+The application use a configured proxy to use different APIs. Please test the application in develop mode, deploying it to localhost.
+
+### Description
+
+Technologies stack: Typescript, React
+
+Application use Privatbank (Ukraine's bank) API  to display header's pair rates. I use it, becouse this api return rates of only the two currency pairs as needed in task (UAH/USD, UAH/EUR).
+Also application use ExchangeRate API  to find of any currencies pair rates and get all available currencies list.
+
+How does it work?
+The first field contains the amount of currency that needs to be converted and the second field will calculate the conversion result.
+When currency pairs change, the application will automatically convert the values ​​from the first field to the second.
+Default currency pair is USD to UAH.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

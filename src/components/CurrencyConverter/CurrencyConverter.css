@@ -3,6 +3,20 @@
 }
 
 .currency-converter__content-wrapper {
-  /* max-width: 325px; */
+  max-width: 320px;
   margin: auto
+}
+
+.currency-converter__input {
+  width: 35%;
+}
+
+.currency-converter__select-trigger {
+  width: 65% ;
+  display: flex;
+  justify-content: end;
+}
+
+.currency-converter__select-trigger:hover {
+  cursor: pointer;
 }

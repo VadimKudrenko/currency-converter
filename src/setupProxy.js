@@ -1,26 +1,24 @@
 const { createProxyMiddleware } = require('http-proxy-middleware');
 
 module.exports = function(app) {
-  // Прокси для первого API
   app.use(
-    '/exchangerate-api', // Путь, который будет проксироваться
+    '/exchangerate-api',
     createProxyMiddleware({
-      target: 'https://v6.exchangerate-api.com/', // Целевой сервер API
-      changeOrigin: true, // Изменяет заголовок Origin в запросе
+      target: 'https://v6.exchangerate-api.com/',
+      changeOrigin: true,
       pathRewrite: {
-        '^/api1': '', // Удаляет `/api1` из пути запроса
+        '^/api1': '', 
       },
     })
   );
 
-  // Прокси для второго API
   app.use(
-    '/privatbank-api', // Путь, который будет проксироваться
+    '/privatbank-api', 
     createProxyMiddleware({
-      target: 'https://api.privatbank.ua/', // Целевой сервер API
-      changeOrigin: true, // Изменяет заголовок Origin в запросе
+      target: 'https://api.privatbank.ua/', 
+      changeOrigin: true, 
       pathRewrite: {
-        '^/api2': '', // Удаляет `/api2` из пути запроса
+        '^/api2': '',
       },
     })
   );
